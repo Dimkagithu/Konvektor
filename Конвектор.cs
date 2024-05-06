@@ -1,4 +1,8 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 public class Program
 {
@@ -56,7 +60,7 @@ public class Program
                     Console.WriteLine("\nАктуальный курс доллара к рублю: 91.31");
                     sumUsd -= convSumUsd;
                     sumRub += convSumUsd * 91.31;
-                    Console.WriteLine("Теперь у вас на счету " + sumUsd.ToString("0.00") + " долларов и " + sumRub.ToString("0.00") + " и рублей");
+                    Console.WriteLine("Теперь у вас на счету " + sumUsd.ToString("0.00") + " долларов и " + sumRub.ToString("0.00") + " рублей");
                 }
             }
 
@@ -74,7 +78,7 @@ public class Program
                     Console.WriteLine("\nАктуальный курс доллара к гривне: 39.29");
                     sumUsd -= convSumUsd;
                     sumUah += convSumUsd * 39.29;
-                    Console.WriteLine("Теперь у вас на счету " + sumUsd.ToString("0.00") + " долларов и " + sumUah.ToString("0.00") + " и гривен");
+                    Console.WriteLine("Теперь у вас на счету " + sumUsd.ToString("0.00") + " долларов и " + sumUah.ToString("0.00") + " гривен");
                 }
             }
 
@@ -92,7 +96,7 @@ public class Program
                     Console.WriteLine("\nАктуальный курс рубля к доллару: 0.01");
                     sumRub -= convSumRub;
                     sumUsd += convSumRub / 0.01;
-                    Console.WriteLine("Теперь у вас на счету " + sumRub.ToString("0.00") + " рублей и " + sumUsd.ToString("0.00") + " и долларов");
+                    Console.WriteLine("Теперь у вас на счету " + sumRub.ToString("0.00") + " рублей и " + sumUsd.ToString("0.00") + " долларов");
                 }
             }
 
@@ -110,7 +114,7 @@ public class Program
                     Console.WriteLine("\nАктуальный курс рубля к гривне: 0.43");
                     sumRub -= convSumRub;
                     sumUah += convSumRub / 0.43;
-                    Console.WriteLine("Теперь у вас на счету " + sumRub.ToString("0.00") + " рублей и " + sumUah.ToString("0.00") + " и гривен");
+                    Console.WriteLine("Теперь у вас на счету " + sumRub.ToString("0.00") + " рублей и " + sumUah.ToString("0.00") + " гривен");
                 }
             }
 
@@ -128,7 +132,7 @@ public class Program
                     Console.WriteLine("\nАктуальный курс гривны к доллару: 0.025");
                     sumUah -= convSumUah;
                     sumUsd += convSumUah / 0.025;
-                    Console.WriteLine("Теперь у вас на счету " + sumRub.ToString("0.00") + " рублей и " + sumUah.ToString("0.00") + " и гривен");
+                    Console.WriteLine("Теперь у вас на счету " + sumRub.ToString("0.00") + " рублей и " + sumUah.ToString("0.00") + " гривен");
                 }
             }
 
@@ -146,7 +150,7 @@ public class Program
                     Console.WriteLine("\nАктуальный курс гривны к рублю: 2.32");
                     sumUah -= convSumUah;
                     sumRub += convSumUah * 2.32;
-                    Console.WriteLine("Теперь у вас на счету " + sumUsd.ToString("0.00") + " долларов и " + sumRub.ToString("0.00") + " и рублей");
+                    Console.WriteLine("Теперь у вас на счету " + sumUsd.ToString("0.00") + " долларов и " + sumRub.ToString("0.00") + " рублей");
                 }
             }
         }
